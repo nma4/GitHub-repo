@@ -16,6 +16,13 @@ int main()
    printf("String = %s,  Address = %u\n", str, str);
  
   // free(str);
+	
+  /* Reallocating memory */
+   str = (char *) realloc(str, 25);
+   strcat(str, ".com");
+   printf("String = %s,  Address = %u\n", str, str);
+ 
+  // free(str);
 
    return 0;
 }
